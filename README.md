@@ -8,7 +8,6 @@
 
 # HomeCentr - prometheus-push-gateway
 
-
 ## Usage
 
 ```yml
@@ -25,18 +24,17 @@ services:
 |------|---------------|-------------|
 | PUID | 7077 | UID of the user prometheus-push-gateway should be running as. |
 | PGID | 7077 | GID of the user prometheus-push-gateway should be running as. |
+| PUSHGATEWAY_ARGS | | Command line arguments to the push gateway executable. |
 
 ## Exposed ports
 
 | Port | Protocol | Description |
 |------|------|-------------|
-| 80 | TCP | Some useful details |
+| 9091 | TCP | Metrics HTTP endpoint. |
 
 ## Volumes
 
-| Container path | Description |
-|------------|---------------|
-| /config | Some useful details |
+This image does not expose any volumes.
 
 ## Security
 The container is regularly scanned for vulnerabilities and updated. Further info can be found in the [Security tab](https://github.com/homecentr/docker-prometheus-push-gateway/security).
