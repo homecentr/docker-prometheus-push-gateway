@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv ash
+
+cd /pushgateway
+
+exec runas /bin/pushgateway $PUSHGATEWAY_ARGS
