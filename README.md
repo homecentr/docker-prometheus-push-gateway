@@ -14,8 +14,9 @@
 version: "3.7"
 services:
   prometheus-push-gateway:
-    build: .
     image: homecentr/prometheus-push-gateway
+    ports:
+      - 9091:9091
 ```
 
 ## Environment variables
