@@ -1,4 +1,4 @@
-FROM prom/pushgateway:v1.2.0 as original
+FROM prom/pushgateway:v1.5.1 as original
 
 FROM homecentr/base:2.4.3-alpine
 
